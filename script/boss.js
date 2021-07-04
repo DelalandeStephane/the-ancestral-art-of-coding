@@ -32,7 +32,7 @@ const boss = {
             var questionText = "Tu es courageux... c'est bien ! Pour commencer montre moi comment afficher le Titre de cette page ?";
             var answerText1 = "<h1>The ancestral art of coding</h1>";
             var answerText2 = '<h1 title = "The ancestral art of coding">';
-            var answerText3 = "<title>The ancestral art of coding</title>";
+            var answerText3 = "<header>The ancestral art of coding</header>";
             var goodAnswer = "answer1";
             var succesText = "Bravo tu as trouvé ! mais ce n'est que le début de ton aventure. ";
             var loseText =  "Non c'est pas ça, tu as encore beaucoup à apprendre. Je vais le faire pour toi.";
