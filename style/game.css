@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap');
+
+.alert-size {
+    display: none;
+    background-image:linear-gradient(to bottom, #020111 85%,#191621 100%);
+    background-size: cover;
+    width:100vw;
+    height: 100vh;
+}
+
+.alert-size p {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    bottom: 200px;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    width: 500px;
+    line-height: 38px;
+    margin: auto;
+}
+
+body, * {
+    padding: 0;
+    margin: 0;
+}
+body {
+    transition: opacity 2s ease-in;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    position: absolute;
+    z-index: 3;
+    font-size: 2.2rem;
+    left: 47px;
+    bottom: 65px;
+    width: 261px;
+    text-align: center;
+}
+
+nav {
+    background: url('../img/element/sign1.png');
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    width: 357px;
+    height: 350px;
+    top: -530px;
+    transition: top 1s , opacity 1s;
+    opacity: 0.5;
+}
+nav:hover {
+    opacity: 1;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#game-area{
+    position: absolute;
+    width: 46080px;
+    height: 100%;
+    background-image: url('../img/bg/forest-1.png'), url('../img/bg/forest-2.png'), url('../img/bg/forest-3.png'), url('../img/bg/forest-2.png'), url('../img/bg/forest-1.png'),url('../img/bg/forest-3.png'),url('../img/bg/forest-2.png'),url('../img/bg/field-1.png'),url('../img/bg/field-2.png'),url('../img/bg/field-3.png'),url('../img/bg/field-1.png'),url('../img/bg/field-2.png'),url('../img/bg/field-3.png'), url('../img/bg/war-1.png'), url('../img/bg/war-2.png'),url('../img/bg/war-3.png'),url('../img/bg/war-4.png'), url('../img/bg/war-1.png'), url('../img/bg/war-2.png');
+    background-repeat: no-repeat;
+    background-position: left, 1920px, 3840px,5760px, 7680px,9600px,11520px, 15360px, 17280px, 19200px, 21120px, 23040px, 24960px, 28800px, 30720px, 32640px, 34560px, 36480px, 38400px;
+    background-position-y: bottom;
+}
+
+#game-area * {
+    position: absolute;
+}
+
+.blue-sky {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #90dffe 0%,#38a3d1 100%);
+    z-index: -2;
+}
+.night-sky {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #020111 85%,#191621 100%);
+    z-index: -1;
+    transition: opacity 2s ease-in-out;
+}
+
+.floor{
+    width: 100%;
+    height: 160px;
+    background-image: url('../img/bg/floor.png');
+    bottom: 0;
+    z-index: 1;
+}
+
+#score {
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.cv-box {
+    background: url('../img/element/sign2.png');
+    background-size: cover;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    z-index: 2;
+    top: 94px;
+    left: 260px;
+}
+.cv-link {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    font-size: 2.5rem;
+    top: 72px;
+    left: 68px;
+    font-family: 'Bangers', cursive;
+    opacity: 0.6;
+}
+
+.message {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 200px;
+    bottom: 200px;
+    z-index: 10;
+    left: calc(50% - 250px);
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    width: 500px;
+    display: none;
+    line-height: 38px;
+    transition: opacity 0.5s;
+}
+
+#answer-box {
+    position: absolute;
+    z-index: 7;
+    bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+#answer-box button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 16px;
+    color: white;
+    background: rgb(39, 35, 35);
+    margin: 20px;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out, background 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+#answer-box button:hover {
+    color: rgb(39, 35, 35);
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.confirm {
+    margin-top: 25px;
+    border-top: solid;
+    font-size: 0.8rem;
+    color: greenyellow;
+}
+
+/* character */
+#hero {
+    width: 184px;
+    height: 220px;
+    bottom: 61px;
+    z-index: 3;
+    overflow: hidden;
+    transform: scale(0.7);
+}
+
+.hero-sprite {
+    height: 900px
+}
+
+#sage {
+    width: 440px;
+    height: 570px;
+    bottom: 11px;
+    left: 71vw;
+    overflow: hidden;
+    transition: left 5s ease-in;
+    transform: scale(0.7);
+}
+
+/* evenement */
+.hurt {
+    animation: hurtAnimation 0.2s infinite linear ;
+}
+.kill-me {
+    cursor: pointer;
+}
+.show-nav {
+    top: -156px;
+}
+
+/* element */
+
+.paper {
+    width: 60px;
+    height: 90px;
+    animation: paperAnimation 1s infinite alternate ease-in-out;
+}
+
+#paper-1 {
+    bottom: 150px;
+    left: 3500px;
+}
+
+#paper-2 {
+    left: 5300px;
+    bottom: 500px;
+}
+
+#paper-3 {
+    left: 8440px;
+    bottom:130px;
+}
+#paper-4 {
+left: 10000px;
+bottom: 400px;
+}
+#paper-5 {
+    left: 12000px;
+    bottom: 500px;
+}
+#paper-6 {
+    left: 16300px;
+    bottom: 150px;
+}
+#paper-7 {
+    left: 17000px;
+    bottom: 500px;
+}
+#paper-8 {
+    left: 18700px;
+    bottom: 150px;
+}
+#paper-9 {
+    left: 21100px;
+    bottom: 500px;
+}
+#paper-10 {
+    left: 22700px;
+    bottom: 150px;
+}
+
+#paper-11 {
+    left: 24000px;
+    bottom: 150px;
+}
+
+#paper-12 {
+    left: 25000px;
+    bottom: 500px;
+}
+
+.monster {
+    width: 180px;
+    height: 200px;
+    overflow: hidden;
+    bottom: 81px;
+    z-index: 2;
+    transform: scale(0.7);
+}
+/* Level 1 */
+#monster-1 {
+    left: 2720px;
+}
+
+#monster-2 {
+    left: 4600px;
+}
+
+#monster-3 {
+    left: 5000px;
+}
+
+#monster-4 {
+    left: 5900px;
+}
+
+#monster-5 {
+    left: 8200px;
+}
+/* Level 2 */
+
+#monster-6 {
+    left: 9000px;
+}
+#monster-7 {
+    left: 10000px;
+}
+#monster-8 {
+    left: 11000px;
+}
+#monster-9 {
+    left: 12200px;
+}
+
+/* Level 2 */
+#monster-10 {
+    left: 16200px;
+}
+
+#monster-11 {
+    left: 17000px;
+}
+
+#monster-12 {
+    left: 17800px;
+}
+
+#monster-13 {
+    left: 18600px;
+}
+
+#monster-14 {
+    left: 19400px;
+}
+
+#monster-15 {
+    left: 20600px;
+}
+
+#monster-16 {
+    left: 21200px;
+}
+
+#monster-17 {
+    left: 22000px;
+}
+
+#monster-18 {
+    left: 22800px;
+}
+
+#monster-19 {
+    left: 23600px;
+}
+
+#monster-20 {
+    left: 24400px;
+}
+
+/* level 3 */
+#monster-21 {
+    left: 30000px;
+}
+
+#monster-22 {
+    left: 31000px;
+}
+#monster-23 {
+    left: 32000px;
+}
+#monster-24 {
+    left: 33000px;
+}
+#monster-25 {
+    left: 34000px;
+}
+#monster-26 {
+    left: 35000px;
+}
+#monster-27 {
+    left: 36000px;
+}
+
+#monster-28 {
+    left: 37000px;
+}
+#monster-29 {
+    left: 38000px;
+}
+
+#monster-30 {
+    left: 38000px;
+}
+
+/* Animation */
+
+@keyframes paperAnimation {
+    0% {
+        transform:translateY(0);
+    }
+    100% {
+        transform: translateY(-40px);
+    }
+}
+@keyframes hurtAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+
+
+@media screen and (max-width: 1050px)
+{
+    .container {
+        display: none;
+    }
+    .alert-size {
+        display: block;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The ancestral art of coding</title>
+    <link rel="stylesheet" href="style/game.css">
+</head>
+<body>
+    <nav>
+        <h1>The ancestral art of coding</h1>
+        <div class="cv-box">
+            <a class="cv-link" href="cv.html">CV</a>
+        </div>
+    </nav>
+    <div class="alert-size">
+        <p>Le jeu est optimisé pour les écrans à partir de 13 pouces. Pour le moment vous ne pouvez pas jouer au jeu si votre écran est de taille inférieure.</p>
+    </div>
+    <div id="message-box" class="message"></div>
+    <div id="answer-box"></div>
+    <div id="score">Score : <span>0</span></div>
+    <div class="container">
+        <div id="game-area" class="game-area">
+            <div id="hero" class="hero">
+                <img id="hero-sprite" class="hero-sprite" src="img/character/hero-sprite.png" alt="sprite personnage" >
+            </div>
+
+            <div id="sage">
+                <img id="sage-sprite" src="img/character/boss-sprite.png" alt="">
+            </div>
+
+            <!-- Level 1 -->
+            <div id="monster-1" class="monster lv-1">
+                <img src="img/character/monster-sprite.png" alt=""></div>
+            <div id="monster-2" class="monster lv-1">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-3" class="monster lv-1">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-4" class="monster lv-1">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-5" class="monster lv-1">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+    
+            <div id="monster-6" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-7" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-8" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-9" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <!-- Level 2-->
+            <div id="monster-10" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt=""></div>
+            <div id="monster-11" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt=""></div>
+            <div id="monster-12" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-13" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-14" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-15" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-16" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-17" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-18" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-19" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-20" class="monster lv-2">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+
+            <!-- Level 3-->
+
+            <div id="monster-21" class="monster lv-2 kill-me">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-22" class="monster lv-2 kill-me">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-23" class="monster lv-2 kill-me">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-24" class="monster lv-2 kill-me">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-25" class="monster lv-2 kill-me">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-26" class="monster lv-2 kill-me">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-27" class="monster lv-2 kill-me">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-28" class="monster lv-2 kill-me">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-29" class="monster lv-2 kill-me">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+            <div id="monster-30" class="monster lv-2 kill-me">
+                <img src="img/character/monster-sprite.png" alt="">
+            </div>
+
+        <div class="floor"></div>
+          <img id="paper-1" class="paper" src="img/element/paper.png" alt="">
+          <img id="paper-2" class="paper" src="img/element/paper.png" alt="">
+          <img id="paper-3" class="paper" src="img/element/paper.png" alt="">
+          <img id="paper-4" class="paper" src="img/element/paper.png" alt="">
+          <img id="paper-5" class="paper" src="img/element/paper.png" alt="">
+          <img id="paper-6" class="paper" src="img/element/paper.png" alt="">
+          <img id="paper-7" class="paper" src="img/element/paper.png" alt="">
+          <img id="paper-8" class="paper" src="img/element/paper.png" alt="">
+          <img id="paper-9" class="paper" src="img/element/paper.png" alt="">
+          <img id="paper-10" class="paper" src="img/element/paper.png" alt="">
+          <img id="paper-11" class="paper" src="img/element/paper.png" alt="">
+          <img id="paper-12" class="paper" src="img/element/paper.png" alt="">
+        </div>
+        <div class="blue-sky"></div>
+        <div class="night-sky"></div>
+    </div>
+    <script src="script/gameplay.js"></script>
+    <script src="script/bonus.js"></script>
+    <script src="script/Hero.js"></script>
+    <script src="script/monster.js"></script>
+    <script src="script/boss.js"></script>
+    <script src="script/app.js"></script>
+</body>
+</html>
